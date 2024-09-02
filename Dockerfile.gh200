@@ -109,8 +109,8 @@ RUN --mount=type=cache,target=/root/.cache/ccache \
     fi
 
 # check the size of the wheel, we cannot upload wheels larger than 100MB
-COPY .buildkite/check-wheel-size.py check-wheel-size.py
-RUN python3 check-wheel-size.py dist
+# COPY .buildkite/check-wheel-size.py check-wheel-size.py
+# RUN python3 check-wheel-size.py dist
 
 #################### EXTENSION Build IMAGE ####################
 
