@@ -62,7 +62,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 # files and directories related to build wheels
 COPY csrc csrc
-COPY setup.py setup.py
+COPY setup-gh200.py setup.py
 COPY cmake cmake
 COPY CMakeLists.txt CMakeLists.txt
 COPY requirements-common.txt requirements-common.txt
